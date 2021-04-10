@@ -5,7 +5,8 @@
 #include "Word.h"
 #include <vector>
 
-class Article: public Question{
+
+class Article: public Question {
     private:
         std::vector<Word> words;
 

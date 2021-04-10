@@ -4,19 +4,19 @@ Word::Word() {
     word = "";
 }
 
-Word::Word(std::string w) {
+Word::Word(QString w) {
     setX(0);
     setY(0);
     setSolved(false);
     setWord(w);
 }
 
-void Word::setWord(std::string w) {
+void Word::setWord(QString w) {
     word = w;
 
     return ;
 }
 
-std::string Word::getWord() {
+QString Word::getWord() {
     return word;
 }

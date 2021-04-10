@@ -28,3 +28,7 @@ class Player {
 };
 
 #endif // PLAYER_H
+
+// game
+// ranking
+// exit

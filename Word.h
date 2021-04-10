@@ -3,17 +3,18 @@
 
 #include "Question.h"
 #include <iostream>
+#include <QString>
 
 class Word: public Question {
     private:
-        std::string word;
+        QString word;
 
     public:
         Word();
-        Word(std::string );
+        Word(QString );
 
-        void setWord(std::string );
-        std::string getWord();
+        void setWord(QString );
+        QString getWord();
 };
 
 #endif // WORD_H
