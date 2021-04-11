@@ -13,6 +13,7 @@ SOURCES += \
     Player.cpp \
     Question.cpp \
     Word.cpp \
+    custom.cpp \
     main.cpp \
     mainwindow.cpp \
     menu.cpp
@@ -26,10 +27,12 @@ HEADERS += \
     Player.h \
     Question.h \
     Word.h \
+    custom.h \
     mainwindow.h \
     menu.h
 
 FORMS += \
+    custom.ui \
     mainwindow.ui \
     menu.ui
 

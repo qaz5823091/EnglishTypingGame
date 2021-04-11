@@ -17,3 +17,8 @@ void Menu::on_pushButton_clicked()
 {
     mainWindow->show();
 }
+
+void Menu::on_pushButton_3_clicked()
+{
+    custom->show();
+}

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "mainwindow.h"
+#include "custom.h"
 
 namespace Ui {
 class Menu;
@@ -19,9 +20,12 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::Menu *ui;
     MainWindow *mainWindow = new MainWindow();
+    Custom *custom = new Custom();
 };
 
 #endif // MENU_H
