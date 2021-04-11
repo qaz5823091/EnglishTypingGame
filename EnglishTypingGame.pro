@@ -14,7 +14,8 @@ SOURCES += \
     Question.cpp \
     Word.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    menu.cpp
 
 HEADERS += \
     ../NCYU_Class/EnglishTypingGame/Article.h \
@@ -25,10 +26,12 @@ HEADERS += \
     Player.h \
     Question.h \
     Word.h \
-    mainwindow.h
+    mainwindow.h \
+    menu.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    menu.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

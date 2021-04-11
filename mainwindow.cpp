@@ -82,7 +82,7 @@ void MainWindow::readFile(QString fileName) {
 }
 
 void MainWindow::setWord() {
-    readFile("C:\\Users\\cpp1092020\\C++\\EnglishTypingGame\\vocabulary.txt");
+    readFile("C:\\Users\\allen\\OneDrive\\Desktop\\EnglishTypingGame\\vocabulary.txt");
     length = word.size();
 }
 
