@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
+#include <QDir>
 /*
 #include <iostream>
 using namespace std;
@@ -82,7 +83,8 @@ void MainWindow::readFile(QString fileName) {
 }
 
 void MainWindow::setWord() {
-    readFile("C:\\Users\\allen\\OneDrive\\Desktop\\EnglishTypingGame\\vocabulary.txt");
+    QString location = ":/txt/vocabulary.txt";
+    readFile(location);
     length = word.size();
 }
 

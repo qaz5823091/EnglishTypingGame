@@ -44,3 +44,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     temp.txt \
     vocabulary.txt
+
+RESOURCES += \
+    resource.qrc
