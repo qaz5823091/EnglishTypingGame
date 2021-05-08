@@ -6,6 +6,7 @@
 #include <QKeyEvent>
 #include <vector>
 #include "Word.h"
+#include "Timer.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,6 +24,7 @@ private:
     std::vector<Word> word;
     int length;
     static int index;
+    Timer timer;
 
 public:
     MainWindow(QWidget *parent = nullptr);
@@ -33,6 +35,7 @@ public:
     void setWord();
     void setLabelQuestion(QString );
     void setLabelReply(QString );
+    void setLabelSeconds(QString );
 
 };
 #endif // MAINWINDOW_H

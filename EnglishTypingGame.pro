@@ -12,6 +12,7 @@ SOURCES += \
     Article.cpp \
     Player.cpp \
     Question.cpp \
+    Timer.cpp \
     Word.cpp \
     custom.cpp \
     main.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     Article.h \
     Player.h \
     Question.h \
+    Timer.h \
     Word.h \
     custom.h \
     mainwindow.h \

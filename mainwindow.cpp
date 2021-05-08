@@ -1,15 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Timer.h"
 
 #include <QKeyEvent>
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
 #include <QDir>
-/*
-#include <iostream>
-using namespace std;
-*/
+
 
 int MainWindow::index = 0;
 
@@ -24,6 +22,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->input->setFont(font);
     setWord();
     setLabelQuestion(word[index].getWord());
+    timer.toLabel(ui->seconds);
+    timer.start();
 }
 
 MainWindow::~MainWindow()
@@ -63,7 +63,6 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
             }
         }
     }
-
 }
 
 
