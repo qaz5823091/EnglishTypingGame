@@ -7,15 +7,16 @@
 Timer::Timer() {
     this->timer = new QTimer(this);
     this->seconds = 100;
+    this->counter = 0;
     connect(timer, SIGNAL(timeout()), this, SLOT(slot()));
 
     // timer->start(1000);
 }
 
-Timer::Timer(long long int s) {
+Timer::Timer(int s) {
     this->timer = new QTimer(this);
     this->seconds = s;
-    this->label = label;
+    this->counter = 0;
     connect(timer, SIGNAL(timeout()), this, SLOT(slot()));
 
     // timer->start(1000);
@@ -23,6 +24,7 @@ Timer::Timer(long long int s) {
 
 void Timer::slot() {
     this->seconds--;
+    this->counter++;
     if (seconds == 0)
         timer->stop();
 
@@ -39,7 +41,7 @@ void Timer::stop() {
 }
 
 void Timer::setLabelSeconds() {
-    label->setText(QString::number(seconds));
+    label->setText("倒數 " + QString::number(seconds) + " 秒");
 }
 
 void Timer::toLabel(QLabel *label) {

@@ -7,6 +7,7 @@
 #include <vector>
 #include "Word.h"
 #include "Timer.h"
+#include "RecordrRank.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,12 +20,14 @@ class MainWindow : public QMainWindow
 private:
     Ui::MainWindow *ui;
 
+    Timer timer;
     QString question;
     QString reply;
     std::vector<Word> word;
     int length;
     static int index;
-    Timer timer;
+
+    RecordRank *rank;
 
 public:
     MainWindow(QWidget *parent = nullptr);

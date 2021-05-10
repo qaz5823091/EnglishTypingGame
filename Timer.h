@@ -10,10 +10,11 @@ class Timer : public QObject
 
     public:
         Timer();
-        Timer(long long int);
+        Timer(int);
         QTimer *timer;
         QLabel *label;
-        long long int seconds;
+        int seconds;
+        int counter;
 
     public slots:
         void slot();

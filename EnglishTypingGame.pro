@@ -12,6 +12,7 @@ SOURCES += \
     Article.cpp \
     Player.cpp \
     Question.cpp \
+    RecordRank.cpp \
     Timer.cpp \
     Word.cpp \
     custom.cpp \
@@ -27,6 +28,7 @@ HEADERS += \
     Article.h \
     Player.h \
     Question.h \
+    RecordrRank.h \
     Timer.h \
     Word.h \
     custom.h \
@@ -34,6 +36,7 @@ HEADERS += \
     menu.h
 
 FORMS += \
+    RecordRank.ui \
     custom.ui \
     mainwindow.ui \
     menu.ui

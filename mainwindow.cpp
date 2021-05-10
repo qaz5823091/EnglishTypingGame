@@ -45,6 +45,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
                     }
                     else {
                         setLabelQuestion("Finish!");
+                        timer.stop();
+                        rank = new RecordRank();
+                        rank->sendGrade(length, timer.counter);
+                        rank->show();
                     }
                 }
                 else {

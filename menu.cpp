@@ -15,10 +15,12 @@ Menu::~Menu()
 
 void Menu::on_pushButton_clicked()
 {
+    mainWindow = new MainWindow();
     mainWindow->show();
 }
 
 void Menu::on_pushButton_3_clicked()
 {
+    custom = new Custom();
     custom->show();
 }
