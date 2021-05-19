@@ -1,5 +1,4 @@
-direct
-easy
+allen
 different
-difficult
-dig
+apple
+allen

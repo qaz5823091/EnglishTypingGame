@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>10</y>
+      <y>-10</y>
       <width>251</width>
       <height>51</height>
      </rect>
@@ -37,10 +37,26 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>60</y>
+      <y>40</y>
       <width>281</width>
       <height>221</height>
      </rect>
+    </property>
+    <property name="placeholderText">
+     <string>load your own text</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>270</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>完成輸入</string>
     </property>
    </widget>
   </widget>
@@ -50,7 +66,7 @@
      <x>0</x>
      <y>0</y>
      <width>425</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>

@@ -2,6 +2,8 @@
 #define CUSTOM_H
 
 #include <QMainWindow>
+#include "Word.h"
+#include "mainwindow.h"
 
 namespace Ui {
 class Custom;
@@ -14,6 +16,9 @@ class Custom : public QMainWindow
 public:
     explicit Custom(QWidget *parent = nullptr);
     ~Custom();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::Custom *ui;
