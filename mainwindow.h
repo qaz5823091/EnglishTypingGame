@@ -6,6 +6,8 @@
 #include <QKeyEvent>
 #include <vector>
 #include "Word.h"
+#include "Timer.h"
+#include "RecordrRank.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,11 +20,14 @@ class MainWindow : public QMainWindow
 private:
     Ui::MainWindow *ui;
 
+    Timer timer;
     QString question;
     QString reply;
     std::vector<Word> word;
     int length;
     static int index;
+
+    RecordRank *rank;
 
 public:
     MainWindow(QWidget *parent = nullptr);
@@ -33,6 +38,7 @@ public:
     void setWord();
     void setLabelQuestion(QString );
     void setLabelReply(QString );
+    void setLabelSeconds(QString );
 
 };
 #endif // MAINWINDOW_H

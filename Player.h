@@ -2,11 +2,12 @@
 #define PLAYER_H
 
 #include <iostream>
+#include <QString>
 
 class Player {
     private:
-        std::string firstName;
-        std::string lastName;
+        QString firstName;
+        QString lastName;
         int score;
         double WPM;
         int ranking;
@@ -14,14 +15,14 @@ class Player {
     public:
         Player();
 
-        void setFirstName(std::string );
-        void setLastName(std::string );
+        void setFirstName(QString );
+        void setLastName(QString );
         void setScore(int );
         void setWPM(double );
         void setRanking(int );
 
-        std::string getFirstName();
-        std::string getLastName();
+        QString getFirstName();
+        QString getLastName();
         int getScore();
         double getWPM();
         int getRanking();

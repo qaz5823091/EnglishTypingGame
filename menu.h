@@ -24,8 +24,8 @@ private slots:
 
 private:
     Ui::Menu *ui;
-    MainWindow *mainWindow = new MainWindow();
-    Custom *custom = new Custom();
+    MainWindow *mainWindow;
+    Custom *custom;
 };
 
 #endif // MENU_H

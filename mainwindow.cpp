@@ -1,14 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Timer.h"
 
 #include <QKeyEvent>
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
-/*
-#include <iostream>
-using namespace std;
-*/
+#include <QDir>
+
 
 int MainWindow::index = 0;
 
@@ -23,6 +22,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->input->setFont(font);
     setWord();
     setLabelQuestion(word[index].getWord());
+    timer.toLabel(ui->seconds);
+    timer.start();
 }
 
 MainWindow::~MainWindow()
@@ -44,6 +45,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
                     }
                     else {
                         setLabelQuestion("Finish!");
+                        timer.stop();
+                        rank = new RecordRank();
+                        rank->sendGrade(length, timer.counter);
+                        rank->show();
                     }
                 }
                 else {
@@ -62,7 +67,6 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
             }
         }
     }
-
 }
 
 
@@ -82,7 +86,12 @@ void MainWindow::readFile(QString fileName) {
 }
 
 void MainWindow::setWord() {
+<<<<<<< HEAD
     readFile("C:\\Users\\allen\\OneDrive\\Desktop\\others\\EnglishTypingGame\\vocabulary.txt");
+=======
+    QString location = ":/txt/vocabulary.txt";
+    readFile(location);
+>>>>>>> 40c3394ee87a64e06be9f08be7319b898df68861
     length = word.size();
 }
 
