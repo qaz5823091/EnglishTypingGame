@@ -29,7 +29,7 @@ void Timer::slot() {
         timer->stop();
 
     setLabelSeconds();
-    qDebug() << QString::number(seconds);
+    // qDebug() << QString::number(seconds);
 }
 
 void Timer::start() {

@@ -24,7 +24,7 @@ void RecordRank::setPlayer() {
 }
 
 void RecordRank::sendGrade(int number, int seconds) {
-    player->setWPM( double(number  / (seconds/ 60.0)) );
+    player->setWPM( double(number  / (seconds / 60.0)) );
     qDebug() << number << " " << seconds << " " << player->getWPM() ;
     ui->wpmLabel->setText("速度：    " + QString::number(player->getWPM()) + "    字 / 分鐘");
 }
