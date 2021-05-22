@@ -86,12 +86,8 @@ void MainWindow::readFile(QString fileName) {
 }
 
 void MainWindow::setWord() {
-<<<<<<< HEAD
-    readFile("C:\\Users\\allen\\OneDrive\\Desktop\\others\\EnglishTypingGame\\vocabulary.txt");
-=======
     QString location = ":/txt/vocabulary.txt";
     readFile(location);
->>>>>>> 40c3394ee87a64e06be9f08be7319b898df68861
     length = word.size();
 }
 
