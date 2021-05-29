@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 4.14.2, 2021-05-10T15:37:21. -->
-=======
-<!-- Written by QtCreator 4.14.2, 2021-05-10T14:51:41. -->
->>>>>>> 40c3394ee87a64e06be9f08be7319b898df68861
+<!-- Written by QtCreator 4.14.2, 2021-05-22T11:05:28. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -298,14 +294,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-<<<<<<< HEAD
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">EnglishTypingGame2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/allen/OneDrive/Desktop/Others/EnglishTypingGame/EnglishTypingGame.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/allen/OneDrive/Desktop/Others/EnglishTypingGame/EnglishTypingGame.pro</value>
-=======
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/cpp1092020/C++/EnglishTypingGame/EnglishTypingGame.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/cpp1092020/C++/EnglishTypingGame/EnglishTypingGame.pro</value>
->>>>>>> 40c3394ee87a64e06be9f08be7319b898df68861
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
